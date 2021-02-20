@@ -1,0 +1,31 @@
+.Contacts {
+  padding-top: 15px;
+  text-align: right;
+
+  &-Phone {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #222;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #158b93;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Contacts {
+    text-align: center;
+  }
+}
+
+@include mq-max(575px) {
+  .Contacts {
+    &-Phone {
+      font-size: 1.3rem;
+    }
+  }
+}

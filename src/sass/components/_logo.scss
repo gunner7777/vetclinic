@@ -1,0 +1,72 @@
+.Logo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &-Img {
+    //max-width: 120px;
+    width: 120px;
+    margin-right: 25px;
+  }
+
+  &-Text {
+    font-family: "Raleway", "Helvetica", Arial sans-serif;
+    font-weight: 500;
+    color: $primary-text;
+    font-size: 1.8rem;
+    /* min-width: 600px;
+    width: 50%; */
+
+    & > p:first-child {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+@include mq-max(991px) {
+  .Logo {
+    &-Img {
+      //width: 170px;
+      margin-right: 20px;
+    }
+
+    &-Text {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Logo {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@include mq-max(575px) {
+  .Logo {
+    margin-right: 15px;
+
+    &-Img {
+      margin-bottom: 10px;
+    }
+
+    &-Text {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include mq-max(400px) {
+  .Logo {
+    &-Img {
+      width: 100px;
+    }
+
+    &-Text {
+      font-size: 1.3rem;
+    }
+  }
+}

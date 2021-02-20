@@ -1,0 +1,162 @@
+.Socials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+  &_Footer {
+    justify-content: flex-start;
+  }
+
+  &-Link {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    @extend %fa-icon;
+    @extend .fab;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $secondary-text;
+    border-radius: 50%;
+    background-color: $secondary-bg;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_Telegram {
+      border: 1px solid $telegram;
+      &:before {
+        content: fa-content($fa-var-telegram-plane);
+        color: $telegram;
+      }
+
+      &:hover {
+        background-color: $telegram;
+        &:before {
+          color: $secondary-text;
+        }
+      }
+    }
+
+    &_Vk {
+      border: 1px solid $vk;
+      &:before {
+        content: fa-content($fa-var-vk);
+        color: $vk;
+      }
+
+      &:hover {
+        background-color: $vk;
+        &:before {
+          color: $secondary-text;
+        }
+      }
+    }
+
+    &_Instagram {
+      border: 1px solid $inst;
+      &:before {
+        content: fa-content($fa-var-instagram);
+        color: $inst;
+      }
+      &:hover {
+        background-color: $inst;
+        &:before {
+          color: $secondary-text;
+        }
+      }
+    }
+
+    &_Tiktok {
+      border: 1px solid $tiktok;
+      &:before {
+        content: fa-content($fa-var-tiktok);
+        color: $tiktok;
+      }
+      &:hover {
+        background-color: $tiktok;
+        &:before {
+          color: $secondary-text;
+        }
+      }
+    }
+
+    &_Facebook {
+      border: 1px solid $fb;
+      &:before {
+        content: fa-content($fa-var-facebook-f);
+        color: $fb;
+      }
+      &:hover {
+        background-color: $fb;
+        &:before {
+          color: $secondary-text;
+        }
+      }
+    }
+  }
+}
+
+/* @include mq-max(1140px) {
+  .Socials {
+    margin-right: 20px;
+    margin-left: 20px;
+    &-Link {
+      margin-right: 7px;
+    }
+
+    &_Footer {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+} */
+/* 
+@include mq-max(991px) {
+  .Socials {
+    margin-right: 0px;
+    margin-left: 0px;
+    //width: 49%;
+    justify-content: flex-end;
+
+    &_Footer {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+} */
+
+@include mq-max(767px) {
+  .Socials {
+    /*     margin-right: 0px;
+    margin-left: 0px;
+    //width: 49%; */
+    justify-content: center;
+
+    &_Footer {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .Socials {
+    //width: 100%;
+    justify-content: center;
+    order: 3;
+
+    &_Footer {
+      justify-content: flex-start;
+    }
+  }
+}

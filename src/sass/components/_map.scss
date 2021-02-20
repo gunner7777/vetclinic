@@ -1,0 +1,54 @@
+.Map {
+  margin-top: 40px;
+
+  &-Outer {
+    margin-top: 60px;
+  }
+
+  &-Title {
+    color: #222;
+  }
+
+  &-Contacts {
+    & > p {
+      color: #222;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & a {
+      color: #222;
+      text-decoration: underline;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #2980b9;
+      }
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Map {
+    &-Contacts {
+      & > p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@include mq-max(360px) {
+  .Map {
+    &-Contacts {
+      & > p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

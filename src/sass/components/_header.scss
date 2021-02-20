@@ -1,0 +1,14 @@
+.Header {
+  //position: relative;
+  &-Outer {
+    padding: 20px 30px;
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+  }
+}
+
+@include mq-max(767px) {
+  .Header {
+    justify-content: center;
+  }
+}

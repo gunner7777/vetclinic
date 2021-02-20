@@ -1,0 +1,35 @@
+/*!
+Theme Name: Vgsha Official
+Author: BuzmakovVI
+Description: Vgsha theme
+Version: 1.0
+Text Domain: vgsha
+*/
+@import "./fontawesome/fontawesome";
+@import "./fontawesome/brands";
+@import "./fontawesome/regular";
+@import "./fontawesome/solid";
+
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "./utils/mixin";
+
+/* base */
+@import "./base/colors";
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/grid";
+@import "./base/common";
+@import "./base/fonts";
+
+/* components */
+@import "./components/header";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/socials";
+@import "./components/section";
+@import "./components/aboutClinic";
+@import "./components/map";
+@import "./components/footer";
+@import "./components/footerSection";
+@import "./components/copyright";

@@ -1,0 +1,44 @@
+.Section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-Title {
+    font-family: "Raleway", "Helvetica", Arial sans-serif;
+    font-weight: 600;
+    color: #fdfafa;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+}
+
+@include mq-max(991px) {
+  .Section {
+    &-Title {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Section {
+    &-Title {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .Section {
+    &-Title {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@include mq-max(360px) {
+  .Section {
+    &-Title {
+      font-size: 1.5rem;
+    }
+  }
+}
